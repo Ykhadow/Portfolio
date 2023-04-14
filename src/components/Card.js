@@ -1,15 +1,14 @@
-const Card = ({ image, heading }) => {
+const Card = ({ image, heading, description, link }) => {
   return (
-    <div className="bg-white z-10 shadow-xl hover:scale-105 duration-200 ease-in-out cursor-pointer">
-      <img src={image} />
-      <div className="p-4">
-        <p className="h4">{heading}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing, elit nullam hac
-          tempus mollis velit non
-        </p>
+    <a href={link} target="_blank" rel="noopener" className="bg-white z-10 ">
+      <div className="shadow-xl hover:scale-105 duration-200 ease-in-out cursor-pointer">
+        <img src={image} />
+        <div className="p-4">
+          <p className="h4">{heading}</p>
+          <p>{description}</p>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
