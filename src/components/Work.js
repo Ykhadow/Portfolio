@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 
 import img1 from "../assets/portfolio.png";
 import img2 from "../assets/portal.png";
+import img3 from "../assets/landingPage.png";
 import Card from "./Card";
 
 const Work = () => {
@@ -32,12 +33,18 @@ const Work = () => {
             link={"https://github.com/Ykhadow/Portfolio"}
           />
           <Card
+            image={img3}
+            heading={"Basic Landing Page"}
+            description={"Landing page for a healthy food site"}
+            link={"https://vege-landing-page-301u5anj5-ykhadow.vercel.app/"}
+          />
+          <Card
             image={img2}
             heading={"Dashboard"}
             description={
               "A responsive dashboard app with role based authentication, graphs, and datatables"
             }
-            link={"https://github.com/Ykhadow/Portal-1"}
+            link={"https://portal-1-lbbz9w8d1-ykhadow.vercel.app/"}
           />
         </div>
       </div>

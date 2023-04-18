@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 const Banner = (props) => {
   return (
     <div className="section" id="home">
-      <div className="container mx-auto bg-white z-10">
+      <div className="container mx-auto bg-white z-10 ">
         <div>
           <div className="flex-1  text-center font-secondary ">
             <motion.h1
