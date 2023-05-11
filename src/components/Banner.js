@@ -63,8 +63,8 @@ const Banner = (props) => {
               // viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto"
             >
-              A frontend developer that uses React.JS and React Native give your
-              projects beautiful, responsive, and functional UI.
+              A frontend developer that uses React.JS and React Native to give
+              your projects beautiful, responsive, and functional UI.
             </motion.p>
 
             <motion.div
