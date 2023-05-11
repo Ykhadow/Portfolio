@@ -25,7 +25,7 @@ const Work = () => {
           <p className="max-w-sm mb-16"></p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-fr p-12 md:p-0 justify-center md:justify-start gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-fr p-12 md:p-0 justify-center md:justify-start gap-6 ">
           <Card
             image={img1}
             heading={"Personal Portfolio"}

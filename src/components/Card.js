@@ -1,7 +1,7 @@
 const Card = ({ image, heading, description, link }) => {
   return (
     <a href={link} target="_blank" rel="noopener" className="bg-white z-10 ">
-      <div className="shadow-xl hover:scale-105 duration-200 ease-in-out cursor-pointer">
+      <div className="shadow-xl hover:scale-105 duration-200 ease-in-out cursor-pointer md:h-full">
         <img src={image} />
         <div className="p-4">
           <p className="h4">{heading}</p>

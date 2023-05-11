@@ -26,7 +26,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true }}
-        className="container bg-white md:p-12 md:shadow-lg z-10 text-center lg:text-left flex flex-col gap-12 lg:flex-row justify-between items-center mx-auto"
+        className="container bg-white md:p-12 md:shadow-lg z-10 text-center lg:text-left flex flex-col gap-14 lg:flex-row justify-center items-center mx-auto"
       >
         {/* text */}
         <div>
@@ -52,7 +52,7 @@ const About = () => {
 
         {/* image */}
         <img
-          className="shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] w-0 md:w-3/6"
+          className="shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] w-0 md:w-2/6 "
           src={profile}
         />
       </motion.div>
