@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BiPhoneCall, BiEnvelope } from "react-icons/bi";
-import { TfiLinkedin } from "react-icons/tfi";
+import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
 import { Tooltip } from "react-tooltip";
 
 import { fadeIn } from "./../variants";
@@ -62,13 +62,26 @@ const Contact = () => {
           <a
             href="https://www.linkedin.com/in/yasir-raees-khan-3444a5222/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             className="bg-white z-10"
           >
             <div className="flex flex-col items-center p-6 shadow-lg duration-300 cursor-pointer hover:-translate-y-5 ">
               <TfiLinkedin size={40} className="mb-4" />
               <h4 className="h4">LinkedIn</h4>
               <p>Yasir Raees Khan</p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Ykhadow"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-white z-10"
+          >
+            <div className="flex flex-col items-center p-6 shadow-lg duration-300 cursor-pointer hover:-translate-y-5 ">
+              <TfiGithub size={40} className="mb-4" />
+              <h4 className="h4">Github</h4>
+              <p>Ykhadow</p>
             </div>
           </a>
 

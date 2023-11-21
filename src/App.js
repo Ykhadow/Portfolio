@@ -1,7 +1,6 @@
 import React from "react";
 // components
 import Banner from "./components/Banner";
-import Header from "./components/Header";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Work from "./components/Work";
@@ -15,9 +14,6 @@ import { particleConfig } from "./config";
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -35,7 +31,6 @@ const App = () => {
         {/* <Services /> */}
         <Work />
         <Contact />
-        {/* <div className="h-[4000px]"></div> */}
       </div>
       <Particles
         id="tsparticles"

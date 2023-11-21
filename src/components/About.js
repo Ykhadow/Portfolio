@@ -26,7 +26,7 @@ const About = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true }}
-        className="container bg-white md:p-12 md:shadow-lg z-10 text-center lg:text-left flex flex-col gap-14 lg:flex-row justify-center items-center mx-auto"
+        className="container backdrop-blur-sm md:p-12 z-10 text-center lg:text-left flex flex-col gap-14 lg:flex-row justify-center items-center mx-auto"
       >
         {/* text */}
         <div>
@@ -35,11 +35,11 @@ const About = () => {
           </div>
 
           <p className="max-w-sm mb-16">
-            I'm a MERN stack developer with 1.5 years of React.JS and React
-            Native Experience. I have completed my Bachelors in Computer Science
-            and am now persuing my career as a professional Software Engineer.
-            While primarily being a Frontend developer, I also have entry-level
-            experience of Node.JS, Express and Mongo.
+            I'm a MERN stack developer with 2 years of React.JS and have
+            completed my Bachelors in Computer Science, persuing my career as a
+            professional Software Engineer. While primarily being a Frontend
+            developer, I also have experience with Node.JS, Express, MySql and
+            Mongo.
           </p>
 
           <button
@@ -51,10 +51,7 @@ const About = () => {
         </div>
 
         {/* image */}
-        <img
-          className="shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] w-0 md:w-2/6 "
-          src={profile}
-        />
+        <img className=" w-0 md:w-2/6 " alt="Profile" src={profile} />
       </motion.div>
     </div>
   );

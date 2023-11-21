@@ -1,6 +1,5 @@
 import React from "react";
 
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -47,6 +46,8 @@ const Banner = (props) => {
                   3000,
                   "Bootstrap",
                   3000,
+                  "Material UI",
+                  3000,
                 ]}
                 speed={50}
                 className="text-accent"
@@ -60,7 +61,6 @@ const Banner = (props) => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              // viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto"
             >
               A frontend developer that uses React.JS and React Native to give
@@ -79,23 +79,7 @@ const Banner = (props) => {
                   Contact me
                 </button>
               </Link>
-              {/* <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a> */}
             </motion.div>
-
-            {/* social */}
-            {/* <a href="#">
-              <FaYoutube />
-            </a>
-
-            <a href="#">
-              <FaGithub />
-            </a>
-
-            <a href="#">
-              <FaDribbble />
-            </a> */}
           </div>
         </div>
       </div>
