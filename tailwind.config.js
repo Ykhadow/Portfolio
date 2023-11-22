@@ -22,11 +22,12 @@ module.exports = {
         primary: "#000000",
         accent: "#000000",
       },
-      // backgroundImage: {
-      //   site: "url('./assets/site-bg.jpg')",
-      //   about: "url('./assets/about.png')",
-      //   services: "url('./assets/services.png')",
-      // },
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)",
+        ],
+      },
     },
   },
   plugins: [],

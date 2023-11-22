@@ -11,6 +11,7 @@ const About = () => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
+
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
@@ -20,21 +21,24 @@ const About = () => {
     });
   };
   return (
-    <div className="section" id="about">
+    <div className="section p-4" id="about">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true }}
-        className="container backdrop-blur-sm md:p-12 z-10 text-center lg:text-left flex flex-col gap-14 lg:flex-row justify-center items-center mx-auto"
+        className="container bg-neutral-800/60 text-white backdrop-blur-sm p-12 z-10 text-center mx-auto"
       >
         {/* text */}
-        <div>
-          <div className="h2 leading-tight text-accent">
+        <div className="flex flex-col items-center gap-8">
+          <div className="h2 text-6xl leading-tight font-thin ">
             <h2>About Me</h2>
           </div>
 
-          <p className="max-w-sm mb-16">
+          {/* image */}
+          <img className=" w-0 md:w-1/6 " alt="Profile" src={profile} />
+
+          <p className="max-w-lg text-xl  text-gray-400 ">
             I'm a MERN stack developer with 2 years of React.JS and have
             completed my Bachelors in Computer Science, persuing my career as a
             professional Software Engineer. While primarily being a Frontend
@@ -44,14 +48,11 @@ const About = () => {
 
           <button
             onClick={downloadResume}
-            className="btn btn-lg lg:text-[20px]"
+            className="hover:text-black border mt-4 border-gray-400 border-opacity-40 hover:bg-white py-3 px-8 duration-200 lg:text-[20px]"
           >
             Download Resume
           </button>
         </div>
-
-        {/* image */}
-        <img className=" w-0 md:w-2/6 " alt="Profile" src={profile} />
       </motion.div>
     </div>
   );

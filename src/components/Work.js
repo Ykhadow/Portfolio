@@ -13,10 +13,10 @@ import gallery from "../assets/gallery.png";
 const Work = () => {
   return (
     <section className="section " id="work">
-      <div className="text-center lg:text-left container  mx-auto">
+      <div className="text-center text-white lg:text-left container  mx-auto">
         {/* text */}
 
-        <div className="h2 leading-tight text-accent">
+        <div className="h2 text-6xl leading-tight font-thin ">
           <motion.h2
             variants={fadeIn("up", 0.3)}
             initial="hidden"

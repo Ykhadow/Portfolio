@@ -8,15 +8,14 @@ import { Link } from "react-scroll";
 const Banner = (props) => {
   return (
     <div className="section" id="home">
-      <div className="container mx-auto bg-white z-10 ">
+      <div className="container mx-auto text-white backdrop-blur-sm p-12 z-10 ">
         <div>
-          <div className="flex-1  text-center font-secondary ">
+          <div className="flex-1 text-center ">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              // viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] mb-4 font-bold leading-[0.8] lg:text-[110px]"
             >
               Yasir Raees Khan
@@ -27,11 +26,9 @@ const Banner = (props) => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              // viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold 
+              className="mb-6 text-[36px] lg:text-[60px] font-thin 
             uppercase leading-[1]"
             >
-              <span className=" text-black"></span>
               <TypeAnimation
                 sequence={[
                   "React.js",
@@ -50,8 +47,6 @@ const Banner = (props) => {
                   3000,
                 ]}
                 speed={50}
-                className="text-accent"
-                wrapper="span"
                 repeat={Infinity}
               />
             </motion.div>
@@ -61,7 +56,7 @@ const Banner = (props) => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }}
-              className="mb-8 max-w-lg mx-auto"
+              className="mb-8 text-xl text-gray-400 max-w-lg mx-auto"
             >
               A frontend developer that uses React.JS and React Native to give
               your projects beautiful, responsive, and functional UI.
@@ -75,7 +70,7 @@ const Banner = (props) => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto"
             >
               <Link to="contact" smooth={true}>
-                <button className="btn btn-lg lg:text-[20px]">
+                <button className="hover:text-black hover:drop-shadow-glow border mt-4 border-gray-400 border-opacity-40 hover:bg-white py-3 px-8 duration-200 lg:text-[20px]">
                   Contact me
                 </button>
               </Link>

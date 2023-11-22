@@ -1,4 +1,5 @@
 import React from "react";
+
 // components
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
@@ -13,7 +14,6 @@ import { particleConfig } from "./config";
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <>
-      <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
+      <div className="bg-gradient-to-b from-black via-[#060003] to-[#090009] bg-no-repeat overflow-hidden font-secondary">
         {/* <Header /> */}
         <Banner />
         <Nav />
