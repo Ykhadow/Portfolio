@@ -39,11 +39,12 @@ const About = () => {
           <img className=" w-0 md:w-1/6 " alt="Profile" src={profile} />
 
           <p className="max-w-lg text-xl  text-gray-400 ">
-            I'm a MERN stack developer with 2 years of React.JS and have
-            completed my Bachelors in Computer Science, persuing my career as a
-            professional Software Engineer. While primarily being a Frontend
-            developer, I also have experience with Node.JS, Express, MySql and
-            Mongo.
+            As a MERN stack developer with two years of experience in React.js
+            and a Bachelor's degree in Computer Science, I am pursuing a career
+            as a professional Software Engineer. While primarily focusing on
+            frontend development, I have hand's on experience with Node.js,
+            Express, MySQL, and MongoDB, and am always ready to take on new
+            challenges.
           </p>
 
           <button
